@@ -2,14 +2,14 @@ import MenuItens from './MenuItens'
 
 import Logo from '../../assets/logo.svg'
 
-import './header.scss'
+import {Container} from './styles'
 import Button from './Button'
 
 
 export default function Header() {
     return (
         <>
-            <div className='container'>
+            <Container>
                 <header>
                     
                     <img src={Logo} alt="logo" className='logo_rocket' />
@@ -28,7 +28,7 @@ export default function Header() {
                     
                     <Button/>
                 </header>
-            </div>
+            </Container>
         </> 
     )
 }

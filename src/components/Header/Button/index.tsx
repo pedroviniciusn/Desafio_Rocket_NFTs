@@ -1,13 +1,13 @@
 import Logo from '../../../assets/logoButton.svg'
 
-import './button.scss'
+import {Button} from './styles'
 
 
-export default function Button() {
+export default function () {
     return (
-       <button type='button'>
+       <Button type='button'>
             <img src={Logo} alt='logo button' className='logo_meta_mask'/>
             Conectar carteira
-       </button>
+       </Button>
     )
 }

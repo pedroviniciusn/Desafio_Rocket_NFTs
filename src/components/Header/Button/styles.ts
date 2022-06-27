@@ -1,4 +1,6 @@
-button {
+import styled from 'styled-components'
+
+export const Button = styled.button`
     width: 14.3rem;
     height: 3.1rem;
 
@@ -15,4 +17,4 @@ button {
         height: 30px;
 
     }
-}
+` 
