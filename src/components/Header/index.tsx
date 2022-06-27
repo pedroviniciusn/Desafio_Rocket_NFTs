@@ -2,7 +2,7 @@ import MenuItens from './MenuItens'
 
 import Logo from '../../assets/logo.svg'
 
-import {Container} from './styles'
+import { Container } from './styles'
 import Button from './Button'
 
 
