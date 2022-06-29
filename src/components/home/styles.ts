@@ -55,13 +55,14 @@ export const Container = styled.section`
             padding-top: 5rem;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 40px;
+            grid-gap: 35px;
             align-items: stretch;
 
             img {
                 border: 1px solid #FFFFFF;
                 box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
                 max-width: 100%;
+                
             }
         }
     }

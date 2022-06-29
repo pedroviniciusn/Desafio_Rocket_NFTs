@@ -1,6 +1,6 @@
-import LogoExplorer from '../../../assets/badge.svg'
-import GrupoDeArtistas from '../../../assets/group-avarts.png'
-import {ImagesGallery} from './gallery/ImagesGallery'
+import LogoExplorer from '../../assets/badge.svg'
+import GrupoDeArtistas from '../../assets/group-avarts.png'
+import { ImagesGallery } from './gallery/ImagesGallery'
 import { Container } from './styles'
 
 interface itemProps {
