@@ -17,7 +17,7 @@ export const Container = styled.section`
                 width: 401px;
                 margin-right: 2rem;
 
-                p{
+                p {
                     font-size: 17px;
                     text-align: start;
                 }

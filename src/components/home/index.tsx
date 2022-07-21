@@ -1,7 +1,10 @@
 import LogoExplorer from '../../assets/badge.svg'
 import GrupoDeArtistas from '../../assets/group-avarts.png'
+import AboutPage from '../AboutPage';
 import { ImagesGallery } from './gallery/ImagesGallery'
+import PopularOfTheWeek from '../PopularOfTheWeek';
 import { Container } from './styles'
+import BestArtists from '../BestArtists';
 
 interface itemProps {
     id: number;
@@ -11,6 +14,7 @@ interface itemProps {
 
 export default function Home() {
     return (
+        <>
         <Container>
             <main>
                 <div className='content'>
@@ -50,5 +54,9 @@ export default function Home() {
                 </div>
             </main>
       </Container>
+      <AboutPage />
+      <PopularOfTheWeek />
+      <BestArtists />
+      </>
     )
 }

@@ -1,5 +1,3 @@
-
-import AboutPage from './components/AboutPage'
 import Header  from './components/Header'
 import Home from './components/home'
 
@@ -11,7 +9,6 @@ function App() {
     <>
       <Header/>
       <Home />
-      <AboutPage />
       <GlobalStyles />
     </>
   )
