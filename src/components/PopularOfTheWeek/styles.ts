@@ -11,7 +11,7 @@ export const Content = styled.div`
     margin: 0 auto;
 
     .title {
-        margin-bottom: 10rem;
+        margin-bottom: 8rem;
 
         h1 {
             font-size: 40px;
@@ -25,7 +25,7 @@ export const Content = styled.div`
 
     .line {
         position: absolute;
-        top: 304%;
+        top: 307%;
         left: 51%;
         margin-right: -50%;
         transform: translate(-50%,-50%);
