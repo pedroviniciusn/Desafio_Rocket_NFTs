@@ -1,43 +1,40 @@
 import styled from 'styled-components'
 
 
-export const Container = styled.div`
-    padding: 32px;
+export  const Header = styled.header`
+   
+    max-width: 1277px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 4rem; 
 
-    header {
-        max-width: 1120px;
-        margin: 0 auto;
+    .logo_rocket {
+        width: 265px;
+        height: 43px;
+    }
+
+    nav {
+        width: 21.3rem;
+        height: 1.5rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-
-        .logo_rocket {
-            width: 265px;
-            height: 43px;
-        }
-
-        nav {
-            width: 21.3rem;
-            height: 1.5rem;
+        
+        ul {
             display: flex;
             align-items: center;
-            
-            ul {
+            li {
                 display: flex;
                 align-items: center;
-                li {
-                    display: flex;
-                    align-items: center;
-                    padding: 1rem;
-                    a {
-                        text-decoration: none !important;
-                        color: var(--text-color);
-                    }
+                padding: 1rem;
+                a {
+                    text-decoration: none !important;
+                    color: var(--text-color);
                 }
             }
         }
-    }   
-
+    }
 ` 
 
 

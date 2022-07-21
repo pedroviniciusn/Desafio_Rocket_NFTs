@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
+import Background from '../../assets/background.png'
+
+
 export const Container = styled.section`
-    margin-top: 3rem;
+    background: url(${Background});
+    background-size: cover;   
 
     main {
-        max-width: 1120px;
+        max-width: 1277px;
         height: auto;
         margin: 0 auto;
 
@@ -13,8 +17,8 @@ export const Container = styled.section`
             align-items: center;
             justify-content: space-between;
 
-            .home {
-                width: 401px;
+            .info {
+                width: 371px;
                 margin-right: 2rem;
 
                 p {
@@ -25,16 +29,17 @@ export const Container = styled.section`
                 .grupo_de_artistas {
                     display: flex;
                     align-items: end;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
 
                     margin-top: 2rem;
                 }
             }
 
             .title {
-                width: 596px;
+                width: 527px;
                 text-align: start;
                 margin-right: 1rem;
+                
 
                 h1 {
                     font-size: 44px;
@@ -54,7 +59,7 @@ export const Container = styled.section`
         .galleryContent {
             padding-top: 5rem;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
             grid-gap: 35px;
             align-items: stretch;
 

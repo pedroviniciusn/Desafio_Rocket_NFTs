@@ -1,6 +1,5 @@
 import {createGlobalStyle} from 'styled-components'
 
-import Background from '../assets/background.png'
 
 
 export default createGlobalStyle`
@@ -33,8 +32,6 @@ export default createGlobalStyle`
 }
 
 body {
-    background: url(${Background});
-    background-size: cover;   
     color: var(--text-color);
 }
 

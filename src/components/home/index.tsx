@@ -1,10 +1,12 @@
+import Header  from '../../components/Header'
+
+import { ImagesGallery } from './gallery/ImagesGallery'
+
 import LogoExplorer from '../../assets/badge.svg'
 import GrupoDeArtistas from '../../assets/group-avarts.png'
-import AboutPage from '../AboutPage';
-import { ImagesGallery } from './gallery/ImagesGallery'
-import PopularOfTheWeek from '../PopularOfTheWeek';
+
 import { Container } from './styles'
-import BestArtists from '../BestArtists';
+
 
 interface itemProps {
     id: number;
@@ -16,9 +18,10 @@ export default function Home() {
     return (
         <>
         <Container>
+        <Header/>
             <main>
                 <div className='content'>
-                    <div className='home'>
+                    <div className='info'>
                         <p>
                         Mercado digital para colecionáveis em criptos e tokens não fungível (NFT). 
                         Compre, venda e descubra ativos digitais exclusivos para você.
@@ -54,9 +57,6 @@ export default function Home() {
                 </div>
             </main>
       </Container>
-      <AboutPage />
-      <PopularOfTheWeek />
-      <BestArtists />
       </>
     )
 }

@@ -1,5 +1,8 @@
-import Header  from './components/Header'
+
+import AboutPage from './components/AboutPage'
+import BestArtists from './components/BestArtists'
 import Home from './components/home'
+import PopularOfTheWeek from './components/PopularOfTheWeek'
 
 import GlobalStyles from './styles/GlobalStyles'
 
@@ -7,8 +10,10 @@ function App() {
 
   return (
     <>
-      <Header/>
       <Home />
+      <AboutPage />
+      <PopularOfTheWeek />
+      <BestArtists />
       <GlobalStyles />
     </>
   )

@@ -3,6 +3,12 @@ import Aritis from '../../assets/artista-1.png'
 import { BestArtistList } from "./BestArtistsList";
 import ButtonMoreArtists from "./ButtonMoreArtists";
 
+interface ItemProps {
+    id: number;
+    name: string;
+    picturesNumber: string;
+    img: string;
+}
 
 export default function BestArtists() {
     return (
@@ -13,9 +19,9 @@ export default function BestArtists() {
                 </div>
                 <ListArtists>
                     {
-                        BestArtistList.map((item) => {
+                        BestArtistList.map((item : ItemProps) => {
                             return (
-                                <ArtistsCards>
+                                <ArtistsCards key={item.id}>
                                     <img src={item.img} alt={item.name}/>
                                     <div className="artistInfo">
                                         <span className="nameArtist">{item.name}</span>
