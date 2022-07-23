@@ -1,5 +1,4 @@
 import { ArtistsCards, Container, Content, ListArtists } from "./style";
-import Aritis from '../../assets/artista-1.png'
 import { BestArtistList } from "./BestArtistsList";
 import ButtonMoreArtists from "./ButtonMoreArtists";
 
