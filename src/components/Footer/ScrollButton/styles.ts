@@ -7,4 +7,9 @@ export const Button = styled.button`
 
     border: none;
 
+    transition: filter 0.2s;
+    
+    &:hover {
+        filter: brightness(0.8);
+    }
 `

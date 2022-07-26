@@ -24,10 +24,12 @@ export  const Header = styled.header`
         ul {
             display: flex;
             align-items: center;
+
             li {
                 display: flex;
                 align-items: center;
                 padding: 1rem;
+                
                 a {
                     text-decoration: none !important;
                     color: var(--text-color);
