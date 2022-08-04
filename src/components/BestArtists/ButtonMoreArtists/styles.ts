@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const Button = styled.button`
 
     width: 260.34px;
-    height: 41.34px;
 
     display: flex;
     align-items: center;
@@ -16,5 +15,13 @@ export const Button = styled.button`
 
     span {
         font-size: 18px;
+    }
+
+    
+    &:hover {
+        color: var(--color-logo);
+        
+        border-bottom: 1px solid var(--color-logo);
+        transition:  0.5s;
     }
 `

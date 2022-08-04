@@ -9,8 +9,7 @@ import { Container } from './styles'
 
 
 interface itemProps {
-    id: number;
-    img: string;
+    img: any;
 }
 
 
@@ -49,9 +48,9 @@ export default function Home() {
                     <img src={LogoExplorer} alt='Logo explorer' className='logo_explorer'/>
                 </div>
                 <div className='galleryContent'>
-                    {ImagesGallery.map((item: itemProps) => {
+                    {ImagesGallery.map((item: itemProps, index: number) => {
                         return (
-                            <img key={item.id} src={item.img}/>  
+                            <img key={index} src={item.img}/>  
                         )
                     })}
                 </div>

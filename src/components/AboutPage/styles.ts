@@ -3,11 +3,13 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     background: var(--body-background);
+
+    border-bottom: 1px solid var(--subtitle-color);
 `
 
 export const Content = styled.div`
-    max-width: 1440px;
-    height: 660px;
+    max-width: 1240px;
+    height: auto;
     display: flex;
 
     margin: 0 auto;
@@ -24,7 +26,7 @@ export const Content = styled.div`
 
         padding: 3rem;
         border-right: 1px solid var(--subtitle-color);
-        border-bottom: 1px solid var(--subtitle-color);
+        
 
        
         .numbers {
@@ -55,7 +57,8 @@ export const Content = styled.div`
     }
 
     .informations {
-        width: 1158px;
+        width: 1240px;
+        height: 616px;
 
         .content {
             max-width: 952px;

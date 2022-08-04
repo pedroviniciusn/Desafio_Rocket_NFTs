@@ -6,7 +6,7 @@ export const Container = styled.section`
 `
 
 export const Content = styled.div`
-    width: 1287px;
+    width: 1240px;
     height: auto;
     margin: 0 auto;
 
@@ -27,7 +27,7 @@ export const Content = styled.div`
     
     button {
         margin: 0 auto;
-        padding-top: 4rem;
+        padding: 4rem 0 1rem;
     }
 `
 

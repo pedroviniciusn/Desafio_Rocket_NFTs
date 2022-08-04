@@ -8,7 +8,7 @@ export const Container = styled.section`
     background-size: cover;   
 
     main {
-        max-width: 1277px;
+        max-width: 1240px;
         height: auto;
         margin: 0 auto;
 

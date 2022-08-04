@@ -5,11 +5,10 @@ import ArrowWhite from '../../assets/arrow-white.svg'
 import { ReactSVGElement } from "react";
 
 interface itemProps {
-    id: number;
     astronaut: string;
     name: string;
     price: string;
-    img: string;
+    img: any;
 }
 
 export default function PopularOfTheWeek() {
@@ -19,13 +18,11 @@ export default function PopularOfTheWeek() {
                 <div className="title">
                     <h1><span>Populares</span> da semana</h1>
                 </div>
-
-                <span className="line"></span>
                 <AstronautCards>
-                        {PopularAstronaut.map((item: itemProps) => {
+                        {PopularAstronaut.map((item: itemProps, index: number) => {
                             return (
                                 <Cards>
-                                    <div className="astronautNumber" key={item.id}>
+                                    <div className="astronautNumber" key={index}>
                                         <h3>{item.astronaut}</h3>
                                         <img src={ArrowWhite}/>
                                     </div>

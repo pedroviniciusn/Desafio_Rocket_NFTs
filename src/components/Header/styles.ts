@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export  const Header = styled.header`
    
-    max-width: 1277px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -32,7 +32,17 @@ export  const Header = styled.header`
                 
                 a {
                     text-decoration: none !important;
+
                     color: var(--text-color);
+
+                    &:hover {
+                        transition: color 0.2s;
+
+                        color: var(--color-logo);
+
+                        border-bottom: 1px solid var(--color-logo);
+
+                    }
                 }
             }
         }

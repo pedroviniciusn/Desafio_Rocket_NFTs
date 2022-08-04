@@ -6,7 +6,7 @@ export const Container = styled.section`
 `
 
 export const Content = styled.div`
-    max-width: 1265px;
+    max-width: 1240px;
     height: auto;
     margin: 0 auto;
 
@@ -21,17 +21,6 @@ export const Content = styled.div`
                 color: var(--color-logo);
             }
         }
-    }
-
-    .line {
-        position: absolute;
-        top: 307%;
-        left: 51%;
-        margin-right: -50%;
-        transform: translate(-50%,-50%);
-        height: 726px;
-        border-left: 2px solid;
-        border-color: var(--subtitle-color);   
     }
 ` 
 

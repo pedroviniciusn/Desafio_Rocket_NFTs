@@ -17,4 +17,10 @@ export const Button = styled.button`
         height: 30px;
 
     }
+
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
 ` 

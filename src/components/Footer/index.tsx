@@ -1,9 +1,19 @@
+import { ReactComponentElement, ReactHTMLElement, ReactNode } from 'react'
 import Logo from '../../assets/logo.svg'
 import { InformationsListCompany, InformationsListLinks, InformationsListTour } from './InformationsList'
 import ScrollButton from './ScrollButton'
 import { SocialNetworks } from './SocialNetworks'
 
 import { BottomFooter, Footer, ListCompany, ListLinks, ListTour, MiddleFooter, MiddleFooterContent, SocialNetworksList, TopFooter } from "./style"
+
+interface LinkProps {
+    name: string;
+    link: string; 
+}
+
+interface SocialNetworksProps {
+    img: any;
+}
 
 export default function FooterComponent() {
     return (
@@ -22,9 +32,9 @@ export default function FooterComponent() {
                        </div>
                     </div>
                     <ListCompany>
-                        {InformationsListCompany.map((item) => {
+                        {InformationsListCompany.map((item: LinkProps, index: number) => {
                             return (
-                                <li key={item.id}>
+                                <li key={index}>
                                     <a href={item.link}>
                                         {item.name}
                                     </a>
@@ -33,9 +43,9 @@ export default function FooterComponent() {
                         })}
                     </ListCompany>
                     <ListTour>
-                        {InformationsListTour.map((item) => {
+                        {InformationsListTour.map((item: LinkProps, index: number) => {
                             return (
-                                <li key={item.id}>
+                                <li key={index}>
                                     <a href={item.link}>
                                         {item.name}
                                     </a>
@@ -44,9 +54,9 @@ export default function FooterComponent() {
                         })}
                     </ListTour>
                     <ListLinks>
-                    {InformationsListLinks.map((item) => {
+                    {InformationsListLinks.map((item: LinkProps, index: number) => {
                             return (
-                                <li key={item.id}>
+                                <li key={index}>
                                     <a href={item.link}>
                                         {item.name}
                                     </a>
@@ -63,10 +73,10 @@ export default function FooterComponent() {
                     </a>
                 </span>
                 <SocialNetworksList>
-                    {SocialNetworks.map((item) => {
+                    {SocialNetworks.map((item: SocialNetworksProps, index: number) => {
                         return (
-                            <li key={item.id}>
-                                <img src={item.img} alt='' />
+                            <li key={index}>
+                                <img src={item.img} alt='Social Networks' />
                             </li>
                         )
                     })}

@@ -10,36 +10,27 @@ import Image8 from '../../../assets/galeria-8.png'
 
 export const ImagesGallery = [
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image1,
-        
+        img: Image1    
     },
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image2,
+        img: Image2
     },
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image3,
+        img: Image3
     },
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image4,
+        img: Image4
     },
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image5,
+        img: Image5
     },
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image6,
+        img: Image6
     },
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image7,
+        img: Image7
     },
     {
-        id: Math.floor(Math.random() * 10),
-        img: Image8,
+        img: Image8
     },
 ]

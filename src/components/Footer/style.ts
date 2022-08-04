@@ -5,7 +5,7 @@ export const Footer = styled.footer`
 `
 
 export const TopFooter = styled.div`
-    max-width: 1268px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 4rem 0;
 
@@ -20,7 +20,7 @@ export const MiddleFooter = styled.div`
 `
 
 export const MiddleFooterContent = styled.div`
-    width: 1268px;
+    width: 1240px;
     height: auto;
 
     margin: 0 auto;
@@ -96,21 +96,6 @@ export const MiddleFooterContent = styled.div`
         }
         }
     }
-
-    .sendEmail::after {
-        position: absolute;
-        top: 515%;
-        left: 40%;
-        margin-right: -50%;
-        transform: translate(-50%,-50%);
-
-        content: " ";
-        height: 320px;
-        border-left: 2px solid;
-        border-color: var(--subtitle-color);
-    }
-
-
 `
 
 
@@ -194,7 +179,7 @@ export const ListLinks = styled.ul`
 `
 
 export const BottomFooter = styled.div`
-    width: 1268px;
+    width: 1240px;
     margin: 0 auto;
     padding: 5rem 0 3rem;
 
@@ -204,6 +189,12 @@ export const BottomFooter = styled.div`
     a {
         font-size: 20px;
         color: var(--subtitle-color);
+
+        transition: color 0.2s;
+
+        &:hover {
+            color: #FFFFFF;
+        }
     }
 `
 

@@ -5,7 +5,6 @@ import Banner from '../../assets/banner.png'
 import {Container, Content} from './styles'
 
 interface itemProps {
-    id: number;
     name: string;
     numbers: string;
 }
@@ -15,9 +14,9 @@ export default function AboutPage() {
         <Container>
             <Content>
                 <div className="numbersContent"> 
-                    {NumbersInformations.map((item: itemProps)  => {
+                    {NumbersInformations.map((item: itemProps, index: number)  => {
                         return (
-                            <div key={item.id} className="numbers">
+                            <div key={index} className="numbers">
                                 <span>
                                 <strong>
                                 {item.numbers}
